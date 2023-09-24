@@ -51,11 +51,11 @@ public class _02_Ceiling_of_a_number {
             if (arr[mid] == target) {
                 return mid;
             }
-                if (target < arr[mid]) {
-                    end = mid - 1;
-                } else {
-                    start = mid + 1;
-                }
+            if (target < arr[mid]) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
         }
         return start;
     }
