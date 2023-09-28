@@ -31,12 +31,10 @@ public class _06_First_and_last {
     public static int[] searchRange(int[] num, int target) {
 
         int[] ans = {-1, -1};
-        int start = search(num, target, true);
-        int end = search(num, target, false);
-
-        ans[0] = start;
-        ans[1] = end;
-
+        ans[0] = search(num, target, true);
+        if (ans[0] != -1) {
+            ans[1] = search(num, target, false);
+        }
         return ans;
     }
 
